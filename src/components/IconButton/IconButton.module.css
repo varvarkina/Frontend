@@ -1,0 +1,92 @@
+.iconButton {
+    font-size: 14px; 
+    background-color: #f0f4f9;
+    color: #444746;
+    padding: 5px;
+    height: 37px;
+    min-width: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    min-width: 20px;
+    height: 20px;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+}
+
+.iconButton:hover {
+    background-color: #dbdfe5;
+  }
+
+.iconButton:focus{
+    outline: 1px ridge #76789d;  
+}
+
+.iconButton:link,
+.iconButton:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px; 
+    display: inline-block;
+    border-radius: 100px; 
+    transition: all .2s;
+    position: absolute;
+}
+
+.iconButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.iconButton:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.iconButton-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.iconButton::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.iconButton-white::after {
+    background-color: #fff;
+}
+
+.iconButton:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.iconButton-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} 

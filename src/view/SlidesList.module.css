@@ -1,0 +1,38 @@
+.slideList {
+    overflow-y: scroll;
+    min-width: 196px;
+    margin: 20px 10px 0;
+    border-right: 2px solid bisque;
+    border-radius: 20px;
+}
+
+.item {
+    margin: 0 10px 10px;
+    border-radius: 15px;
+}
+
+.dragging {
+    opacity: 0.6;
+    cursor: grabbing;
+}
+
+.slideWrapper {
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.selectedSlide {
+    opacity: 1;
+}
+
+.noSlides {
+    /* margin: auto; */
+    border: 2px solid bisque;
+    min-width: 196px;
+    min-height: 460px;
+    margin: 20px 10px 0;
+    /* width: 130px; 
+    height: 1.5px;
+    background-color: bisque; */
+    border-radius: 20px;
+}

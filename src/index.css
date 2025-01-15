@@ -1,0 +1,140 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: #f9fbfd;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  /* justify-content: space-around; */
+  min-width: 320px;
+  /* height: 100vh; */
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 15px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+/* button:focus{
+  outline: 1px ridge #76789d;  
+} */
+
+
+
+
+/* @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    } 
+    button {
+      background-color: #f9f9f9;
+    }
+  } */
+
+/* =------------------------------------------------------------------------------------- */
+
+/* :root {
+    --scroll-width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: initial
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(0,0,0,.2)
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background-color: #999
+}
+
+::-webkit-scrollbar,::-webkit-scrollbar:hover {
+    width: 7px
+}
+
+[class~=capds-panel__container] {
+    overflow: overlay;
+    overflow-x: hidden
+}
+
+[class~=capds-panel__container] .capds-panel__container {
+    overflow: hidden
+}
+
+.capds-menu--l2-list {
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+@media (max-width: 1439.98px) {
+    html:not(.capds-html--fixed) .capds-product-container section,html:not(.capds-html--fixed) body {
+        -webkit-overflow-scrolling:touch;
+        -ms-scroll-chaining: none;
+        overscroll-behavior: none
+    }
+}
+
+/* @media (max-width: 1023.98px) {
+    html {
+        overflow-x:hidden
+    }
+} */
+
+/* body {
+    -webkit-overflow-scrolling: touch;
+    -ms-scroll-chaining: none;
+    overscroll-behavior: none;
+    overflow-x: hidden
+}
+
+.capds-product-container {
+    position: relative;
+    margin-top: -4.56357rem
+}
+
+.capds-header-banner--open .capds-product-container {
+    margin-top: -7.42071rem
+}
+
+@media (min-width: 1024px) {
+    .capds-header-banner--open .capds-product-container,.capds-product-container {
+        margin-top:0
+    }
+}     */

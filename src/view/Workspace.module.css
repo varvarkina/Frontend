@@ -1,0 +1,28 @@
+.workspace {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 850px;
+    background-color: #ffffff;
+    background-clip: content-box;
+    min-height: 460px;
+}
+
+.noSlides {
+    margin: calc(460px / 2 - 32px);
+    min-width: 414px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: bisque;
+    border-radius: 20px;
+}
+
+.noSlides:hover {
+    background-color: rgb(255, 220, 182);
+}
+
+.noSlides:focus{
+    outline: 1px ridge #fdc35e;  
+}

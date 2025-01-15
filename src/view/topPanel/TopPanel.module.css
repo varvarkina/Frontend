@@ -1,0 +1,144 @@
+.topPanel {
+    max-width: 100%;
+    height: var(--topPanelHeight);
+    padding: 10px;
+}
+
+.title {
+    background-color: transparent;
+    padding: 3px;
+    border: none;
+    font-size: 16px;
+    width: 250px;
+    margin: 0 0 10px 5px;
+    color: #444746;
+    border-radius: 20px;
+}
+
+.button {
+    margin: auto 3px;
+}
+
+.container {
+    display: flex;
+}
+
+.background {
+    margin: auto 3px;
+    border: 0;
+    border-radius: 20px;
+    height: 37px;
+    inline-size: 24px;
+    width: 45px;
+    padding: 8px;
+    block-size: 37px;
+    cursor: pointer;
+}
+
+/* .image {
+    width: auto;
+    height: auto;
+} */
+
+.input {
+    padding: 5px 12px;
+}
+
+.cross {
+    width: 100px;
+}
+
+.import {
+    margin: auto 3px;
+    height: 37px;
+    inline-size: 24px;
+    width: auto;
+    font-size: 14px;
+    color: #444746;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    margin: 0;
+}
+
+.button {
+    font-size: 14px;
+    background-color: #f0f4f9;
+    color: #444746;
+}
+
+.button:hover {
+    background-color: #dbdfe5;
+  }
+
+.button:focus{
+    outline: 1px ridge #76789d;  
+}
+
+.button:link,
+.button:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.button-white::after {
+    background-color: #fff;
+}
+
+.button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.button-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}  
